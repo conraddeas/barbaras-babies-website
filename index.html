@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Barbara's Babies - Affordable, high-quality early childhood education in a loving, faith-based environment in Las Vegas, NV. Licensed daycare with 25+ years experience.">
+    <meta name="keywords" content="daycare, childcare, Las Vegas, early childhood education, preschool, Barbara's Babies">
+    <meta property="og:title" content="Barbara's Babies - Nurturing Your Child's Growth with Love & Learning">
+    <meta property="og:description" content="Where every child feels loved, valued, and empowered to reach their full potential. Licensed daycare in Las Vegas since 2019.">
+    <meta property="og:type" content="website">
+    <title>Barbara's Babies - Quality Childcare & Early Learning in Las Vegas, NV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- PhoneSites Custom Code Block -->
+<div class="custom-code">
+
+<!-- ==================== DESIGN SYSTEM VARIABLES ==================== -->
+<style>
+:root {
+    /* Color System - Warm, Playful, Trustworthy */
+    --primary-pink: #FF8BA0;
+    --primary-pink-light: #FFB4C2;
+    --primary-pink-dark: #E67388;
+
+    --secondary-blue: #89D2DC;
+    --secondary-blue-light: #A8E1E9;
+    --secondary-blue-dark: #6BC4D0;
+
+    --accent-yellow: #FFD97D;
+    --accent-yellow-light: #FFE5A3;
+    --accent-yellow-dark: #FFC94D;
+
+    --success-green: #81C784;
+    --purple-accent: #B794F6;
+    --coral-accent: #FF9B85;
+
+    /* Neutral Colors */
+    --white: #FFFFFF;
+    --cream: #FFF9F5;
+    --light-gray: #F5F5F5;
+    --medium-gray: #9E9E9E;
+    --dark-gray: #4A4A4A;
+    --navy: #2C3E50;
+
+    /* Typography Scale */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Quicksand', sans-serif;
+
+    --fs-hero: clamp(2.5rem, 5vw, 4rem);
+    --fs-h1: clamp(2rem, 4vw, 3rem);
+    --fs-h2: clamp(1.75rem, 3vw, 2.5rem);
+    --fs-h3: clamp(1.25rem, 2.5vw, 1.75rem);
+    --fs-h4: clamp(1.1rem, 2vw, 1.35rem);
+    --fs-body: clamp(1rem, 1.5vw, 1.125rem);
+    --fs-small: clamp(0.875rem, 1.25vw, 1rem);
+
+    /* Spacing System */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2.5rem;
+    --spacing-xl: 4rem;
+    --spacing-2xl: 6rem;
+
+    /* Animation Timing */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+    /* Layout */
+    --max-width: 1200px;
+    --border-radius: 20px;
+    --border-radius-sm: 10px;
+    --box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    --box-shadow-hover: 0 15px 50px rgba(0, 0, 0, 0.12);
+}
+
+/* ==================== GLOBAL STYLES ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.7;
+    color: var(--dark-gray);
+    background-color: var(--cream);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    line-height: 1.2;
+    color: var(--navy);
+    font-weight: 700;
+}
+
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+h4 { font-size: var(--fs-h4); }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: var(--font-body);
+    border: none;
+    cursor: pointer;
+}
+
+/* Screen reader only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ==================== UTILITY CLASSES ==================== */
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.section {
+    padding: var(--spacing-2xl) 0;
+}
+
+.section-alt {
+    background-color: var(--white);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.emoji {
+    font-size: 1.5em;
+    display: inline-block;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* ==================== HEADER & NAVIGATION ==================== */
+.header {
+    background: linear-gradient(135deg, var(--white) 0%, var(--cream) 100%);
+    padding: var(--spacing-sm) 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+    transition: all var(--transition-normal);
+}
+
+.header.scrolled {
+    padding: var(--spacing-xs) 0;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary-pink) 0%, var(--secondary-blue) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.logo-emoji {
+    font-size: 1.3em;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0) rotate(-5deg); }
+    50% { transform: translateY(-5px) rotate(5deg); }
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: var(--spacing-lg);
+    align-items: center;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--navy);
+    transition: color var(--transition-fast);
+    position: relative;
+    padding: var(--spacing-xs) 0;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary-pink), var(--secondary-blue));
+    transition: width var(--transition-normal);
+}
+
+.nav-link:hover {
+    color: var(--primary-pink);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    font-size: 1.75rem;
+    color: var(--navy);
+    padding: var(--spacing-xs);
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background: var(--white);
+        flex-direction: column;
+        padding: var(--spacing-xl) var(--spacing-lg);
+        gap: var(--spacing-md);
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+        transition: right var(--transition-normal);
+        align-items: flex-start;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .nav-close {
+        align-self: flex-end;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: var(--navy);
+        cursor: pointer;
+        margin-bottom: var(--spacing-md);
+    }
+}
+
+/* ==================== HERO SECTION ==================== */
+.hero {
+    background: linear-gradient(135deg, var(--secondary-blue-light) 0%, var(--primary-pink-light) 50%, var(--accent-yellow-light) 100%);
+    padding: var(--spacing-2xl) 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: var(--white);
+    opacity: 0.2;
+    border-radius: 50%;
+    animation: pulse 8s ease-in-out infinite;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -5%;
+    width: 400px;
+    height: 400px;
+    background: var(--accent-yellow);
+    opacity: 0.15;
+    border-radius: 50%;
+    animation: pulse 10s ease-in-out infinite reverse;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-emojis {
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+}
+
+.hero-emojis .emoji:nth-child(1) { animation-delay: 0s; }
+.hero-emojis .emoji:nth-child(2) { animation-delay: 0.2s; }
+.hero-emojis .emoji:nth-child(3) { animation-delay: 0.4s; }
+.hero-emojis .emoji:nth-child(4) { animation-delay: 0.6s; }
+
+.hero-title {
+    font-size: var(--fs-hero);
+    color: var(--navy);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: var(--fs-h4);
+    color: var(--dark-gray);
+    margin-bottom: var(--spacing-xl);
+    font-weight: 500;
+}
+
+.hero-mission {
+    background: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: var(--spacing-xl);
+    text-align: left;
+    line-height: 1.8;
+}
+
+/* ==================== BUTTONS ==================== */
+.btn {
+    display: inline-block;
+    padding: var(--spacing-md) var(--spacing-xl);
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: var(--fs-body);
+    transition: all var(--transition-normal);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-pink) 0%, var(--primary-pink-dark) 100%);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(255, 139, 160, 0.4);
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--secondary-blue-dark) 100%);
+    color: var(--white);
+}
+
+.btn-secondary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(137, 210, 220, 0.4);
+}
+
+.btn-large {
+    padding: var(--spacing-md) var(--spacing-2xl);
+    font-size: var(--fs-h4);
+}
+
+/* ==================== FEATURES SECTION ==================== */
+.features-section {
+    background: var(--white);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    color: var(--navy);
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-pink), var(--secondary-blue), var(--accent-yellow));
+    margin: var(--spacing-md) auto 0;
+    border-radius: 2px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.feature-card {
+    background: linear-gradient(135deg, var(--cream) 0%, var(--white) 100%);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: all var(--transition-normal);
+    border: 2px solid transparent;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--box-shadow-hover);
+    border-color: var(--primary-pink-light);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+    display: inline-block;
+}
+
+.feature-card:nth-child(1) .feature-icon { animation: float 3s ease-in-out infinite; }
+.feature-card:nth-child(2) .feature-icon { animation: float 3s ease-in-out infinite 0.3s; }
+.feature-card:nth-child(3) .feature-icon { animation: float 3s ease-in-out infinite 0.6s; }
+.feature-card:nth-child(4) .feature-icon { animation: float 3s ease-in-out infinite 0.9s; }
+.feature-card:nth-child(5) .feature-icon { animation: float 3s ease-in-out infinite 1.2s; }
+
+.feature-title {
+    color: var(--navy);
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--fs-h3);
+}
+
+.feature-description {
+    color: var(--dark-gray);
+    line-height: 1.7;
+}
+
+/* ==================== CONTACT/CTA SECTION ==================== */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary-pink) 0%, var(--secondary-blue) 50%, var(--purple-accent) 100%);
+    color: var(--white);
+    padding: var(--spacing-2xl) 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '🌟';
+    position: absolute;
+    font-size: 15rem;
+    opacity: 0.1;
+    top: -5rem;
+    right: -5rem;
+    animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.cta-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.cta-title {
+    color: var(--white);
+    margin-bottom: var(--spacing-md);
+}
+
+.cta-subtitle {
+    font-size: var(--fs-h4);
+    margin-bottom: var(--spacing-xl);
+    opacity: 0.95;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+}
+
+.contact-item {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-radius: var(--border-radius-sm);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    transition: all var(--transition-normal);
+}
+
+.contact-item:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+}
+
+.contact-text {
+    font-weight: 600;
+}
+
+.hours-box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    margin: var(--spacing-xl) auto 0;
+    max-width: 400px;
+}
+
+.hours-title {
+    color: var(--white);
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--fs-h3);
+}
+
+.hours-text {
+    font-size: var(--fs-h4);
+    font-weight: 600;
+}
+
+/* ==================== FOOTER ==================== */
+.footer {
+    background: var(--navy);
+    color: var(--white);
+    padding: var(--spacing-xl) 0 var(--spacing-lg);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.footer-section h4 {
+    color: var(--accent-yellow);
+    margin-bottom: var(--spacing-md);
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: var(--spacing-xs);
+}
+
+.footer-links a {
+    color: var(--white);
+    opacity: 0.8;
+    transition: all var(--transition-fast);
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    color: var(--accent-yellow);
+    padding-left: 5px;
+}
+
+.trust-badges {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-weight: 600;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius-sm);
+}
+
+.badge-icon {
+    color: var(--success-green);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: var(--spacing-md);
+    text-align: center;
+    opacity: 0.8;
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+@media (max-width: 768px) {
+    .section {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .hero {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .hero-mission {
+        padding: var(--spacing-md);
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item {
+        width: 100%;
+        max-width: 350px;
+        justify-content: center;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-emojis {
+        font-size: 2rem;
+    }
+
+    .btn-large {
+        padding: var(--spacing-md) var(--spacing-lg);
+        font-size: var(--fs-body);
+        width: 100%;
+    }
+}
+
+/* ==================== ACCESSIBILITY ==================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Focus styles */
+a:focus,
+button:focus {
+    outline: 3px solid var(--primary-pink);
+    outline-offset: 3px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-pink: #D6005C;
+        --secondary-blue: #006A7A;
+        --dark-gray: #000000;
+    }
+}
+</style>
+
+<!-- ==================== HTML STRUCTURE ==================== -->
+
+<!-- Header / Navigation -->
+<header class="header" role="banner">
+    <nav class="container nav-container" role="navigation" aria-label="Main navigation">
+        <a href="#" class="logo" aria-label="Barbara's Babies Home">
+            <span class="logo-emoji">🧸</span>
+            <span>Barbara's Babies</span>
+        </a>
+
+        <button class="mobile-menu-toggle" aria-label="Open mobile menu" aria-expanded="false">
+            ☰
+        </button>
+
+        <ul class="nav-menu">
+            <button class="nav-close" aria-label="Close mobile menu">✕</button>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#programs" class="nav-link">Programs</a></li>
+            <li><a href="#environment" class="nav-link">Environment</a></li>
+            <li><a href="#faq" class="nav-link">FAQ</a></li>
+            <li><a href="#contact" class="nav-link">Contact & Tours</a></li>
+            <li><a href="#parent-info" class="nav-link">Parent Info</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="container hero-content">
+        <div class="hero-emojis" aria-hidden="true">
+            <span class="emoji">🧸</span>
+            <span class="emoji">🌈</span>
+            <span class="emoji">⭐</span>
+            <span class="emoji">🎨</span>
+        </div>
+
+        <h1 class="hero-title">Nurturing Your Child's Growth with Love & Learning</h1>
+
+        <p class="hero-subtitle">Where every child feels loved, valued, and empowered to reach their full potential</p>
+
+        <div class="hero-mission">
+            <p>At <strong>Barbara's Babies</strong>, our mission is to provide <strong>affordable, high-quality early childhood education</strong> in a loving, faith-based environment. Since 2019, we've dedicated ourselves to creating a warm, stimulating atmosphere where children can learn, play, and grow while families experience peace of mind knowing their little ones are being nurtured as if they were at home.</p>
+        </div>
+
+        <a href="#contact" class="btn btn-primary btn-large">Schedule a Tour</a>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section section" id="about">
+    <div class="container">
+        <h2 class="section-title">What Makes Barbara's Babies Special</h2>
+
+        <div class="features-grid">
+            <article class="feature-card">
+                <div class="feature-icon" aria-hidden="true">🏠</div>
+                <h3 class="feature-title">Family-Centered Care</h3>
+                <p class="feature-description">We provide a home-like environment where each child receives individual attention tailored to their unique needs and development.</p>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon" aria-hidden="true">🔍</div>
+                <h3 class="feature-title">Educational Excellence</h3>
+                <p class="feature-description">Our curriculum is designed to foster social, emotional, cognitive, and spiritual growth through play-based learning.</p>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon" aria-hidden="true">🛡️</div>
+                <h3 class="feature-title">Safe & Secure Environment</h3>
+                <p class="feature-description">We maintain the highest standards of safety, cleanliness, and security for your peace of mind.</p>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon" aria-hidden="true">💡</div>
+                <h3 class="feature-title">Engaging Programs</h3>
+                <p class="feature-description">Developmentally appropriate activities prepare children for preschool while making learning fun and interactive.</p>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon" aria-hidden="true">❤️</div>
+                <h3 class="feature-title">Passionate & Qualified Caregivers</h3>
+                <p class="feature-description">Our dedicated team brings over 25 years of early childhood education experience and genuine love for children.</p>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon" aria-hidden="true">🌟</div>
+                <h3 class="feature-title">Faith-Based Foundation</h3>
+                <p class="feature-description">We nurture children's spiritual growth in a loving, values-centered environment that supports their whole development.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- CTA / Contact Section -->
+<section class="cta-section" id="contact">
+    <div class="container cta-content">
+        <div class="feature-icon" aria-hidden="true" style="font-size: 4rem;">📞</div>
+        <h2 class="cta-title">Barbara's Babies Childcare</h2>
+        <p class="cta-subtitle">In Loving Hands</p>
+
+        <h3 style="margin-bottom: 1rem; font-size: var(--fs-h3);">Contact Us Today</h3>
+
+        <div class="contact-info">
+            <a href="tel:7029361984" class="contact-item">
+                <span class="contact-icon">📞</span>
+                <span class="contact-text">(702) 936-1984</span>
+            </a>
+
+            <a href="mailto:bbabies2019@gmail.com" class="contact-item">
+                <span class="contact-icon">✉️</span>
+                <span class="contact-text">bbabies2019@gmail.com</span>
+            </a>
+
+            <a href="https://www.google.com/maps/search/?api=1&query=3117+Piedmont+Ave,+Las+Vegas,+NV" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <span class="contact-icon">📍</span>
+                <span class="contact-text">3117 Piedmont Ave, Las Vegas, NV</span>
+            </a>
+        </div>
+
+        <div class="hours-box">
+            <h4 class="hours-title">Hours</h4>
+            <p class="hours-text">Monday - Friday</p>
+            <p class="hours-text">6:30 AM - 6:00 PM</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer" role="contentinfo">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Barbara's Babies</h4>
+                <p>Providing quality childcare and early childhood education in Las Vegas since 2019.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#environment">Our Environment</a></li>
+                    <li><a href="#parent-info">Parent Info</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Trust & Quality</h4>
+                <div class="trust-badges">
+                    <div class="badge">
+                        <span class="badge-icon">✓</span>
+                        <span>Nevada Licensed</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon">✓</span>
+                        <span>USDA Program</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon">✓</span>
+                        <span>25+ Years Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Barbara's Babies Childcare & More, LLC. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ==================== JAVASCRIPT FUNCTIONALITY ==================== -->
+<script>
+// Mobile Menu Toggle
+(function() {
+    'use strict';
+
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const menuClose = document.querySelector('.nav-close');
+    const navMenu = document.querySelector('.nav-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    // Open menu
+    menuToggle.addEventListener('click', function() {
+        navMenu.classList.add('active');
+        menuToggle.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+    });
+
+    // Close menu
+    function closeMenu() {
+        navMenu.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+    }
+
+    menuClose.addEventListener('click', closeMenu);
+
+    // Close menu when clicking a link
+    navLinks.forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!navMenu.contains(e.target) && !menuToggle.contains(e.target) && navMenu.classList.contains('active')) {
+            closeMenu();
+        }
+    });
+})();
+
+// Header Scroll Effect
+(function() {
+    'use strict';
+
+    const header = document.querySelector('.header');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', function() {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll > 100) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+
+        lastScroll = currentScroll;
+    });
+})();
+
+// Smooth Scroll for Navigation Links
+(function() {
+    'use strict';
+
+    const links = document.querySelectorAll('a[href^="#"]');
+
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+
+            // Only prevent default for anchor links
+            if (href !== '#') {
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+})();
+
+// Intersection Observer for Fade-in Animations
+(function() {
+    'use strict';
+
+    // Add CSS for fade-in
+    const style = document.createElement('style');
+    style.textContent = `
+        .fade-in-element {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in-element.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    `;
+    document.head.appendChild(style);
+
+    // Add class to elements
+    const featureCards = document.querySelectorAll('.feature-card');
+    featureCards.forEach(card => card.classList.add('fade-in-element'));
+
+    // Observer
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+
+    featureCards.forEach(card => observer.observe(card));
+})();
+
+// Keyboard Navigation Enhancement
+(function() {
+    'use strict';
+
+    // Trap focus in mobile menu when open
+    const menu = document.querySelector('.nav-menu');
+    const focusableElements = 'button, a[href]';
+
+    menu.addEventListener('keydown', function(e) {
+        if (!menu.classList.contains('active')) return;
+
+        const focusable = menu.querySelectorAll(focusableElements);
+        const firstFocusable = focusable[0];
+        const lastFocusable = focusable[focusable.length - 1];
+
+        if (e.key === 'Escape') {
+            document.querySelector('.mobile-menu-toggle').click();
+        }
+
+        if (e.key === 'Tab') {
+            if (e.shiftKey) {
+                if (document.activeElement === firstFocusable) {
+                    e.preventDefault();
+                    lastFocusable.focus();
+                }
+            } else {
+                if (document.activeElement === lastFocusable) {
+                    e.preventDefault();
+                    firstFocusable.focus();
+                }
+            }
+        }
+    });
+})();
+
+// Performance: Debounce scroll events
+function debounce(func, wait = 10, immediate = true) {
+    let timeout;
+    return function() {
+        const context = this, args = arguments;
+        const later = function() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+        };
+        const callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+    };
+}
+
+// Log page load for analytics (placeholder)
+console.log('Barbara\'s Babies website loaded successfully');
+</script>
+
+</div>
+<!-- End PhoneSites Custom Code Block -->
+
+</body>
+</html>
